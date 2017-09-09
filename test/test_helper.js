@@ -10,7 +10,7 @@ before( done => {
 });
 
 beforeEach( done => {
-  const { drivers} = mongoose.connection.collections;
+  const { drivers } = mongoose.connection.collections;
   drivers.drop()
     .then(() => done())
     .catch(() => done());
